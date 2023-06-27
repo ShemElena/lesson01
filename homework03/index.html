@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--
+        <link rel="stylesheet" href="style/main.css" />
+        -->
+        <style>
+            /* comment
+                CSS Selector: 
+                    -tag name  P - 1
+                    -attr name + value P - 10
+                    -class: .heading P - 10
+                    -id: #some-id P - 100
+                    - attr style (inline style) P - 500
+                     - !important 1000
+            */
+
+           /* : 1000 */
+
+           .paragraph {
+                color: aqua;
+           }
+
+            p {
+                color:rgb(79, 146, 78);
+            }
+
+            p a {
+                color: red;
+            }
+
+            .paragraph a {
+                color: blueviolet;
+            }
+
+            p .link {
+                color: blue;
+            }
+
+            .paragraph .link {
+                color: chocolate;
+            }
+
+            p .link.active {
+                color: cadetblue;
+            }
+
+            .paragraph .link.active {
+                color: rgb(1, 43, 88);
+            }
+            
+            
+            
+
+        </style>
+    </head>
+    <body>
+        <p class="paragraph">
+            <span >test text</span>
+            <a href="/">My test link 1</a>
+            <a class="link" href="/">My test link 2</a>
+            <a class="link active" href="/">My test link 3</a>
+            
+        </p>
+        <p>
+            <span>test text</span>
+            <a href="/">My test link 1</a>
+            <a class="link" href="/">My test link 2</a>
+            <a class="link active" href="/">My test link 3</a>
+        </p>
+    </body>
+</html>
